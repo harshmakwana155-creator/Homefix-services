@@ -8,13 +8,13 @@ function Sidebar() {
   ];
 
   return (
-    <aside className="hidden w-56 shrink-0 border-r border-slate-200 bg-white md:block">
-      <nav className="flex flex-col gap-1 p-4">
+    <aside className="hidden w-60 shrink-0 border-r border-slate-200 bg-white py-6 md:block">
+      <nav className="flex flex-col gap-1 px-4">
         {links.map((link) => (
           <Link
             key={link.to}
             to={link.to}
-            className="rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+            className="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-600 transition-colors hover:bg-blue-50 hover:text-blue-700"
           >
             {link.label}
           </Link>
@@ -25,4 +25,5 @@ function Sidebar() {
 }
 
 export default Sidebar;
+
 
